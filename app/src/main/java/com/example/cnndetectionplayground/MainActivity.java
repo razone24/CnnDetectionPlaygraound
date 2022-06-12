@@ -1,4 +1,4 @@
-package com.example.gesturedetection;
+package com.example.cnndetectionplayground;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -19,8 +19,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import static com.example.gesturedetection.R.id.action_open;
-import static com.example.gesturedetection.R.id.action_detect;
+import static com.example.cnndetectionplayground.R.id.action_open;
+import static com.example.cnndetectionplayground.R.id.action_detect;
 
 import org.tensorflow.lite.DataType;
 import org.tensorflow.lite.Interpreter;
@@ -199,7 +199,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         try {
-            labels = FileUtil.loadLabels(MainActivity.this, "labels.txt");
+            labels = FileUtil.loadLabels(MainActivity.this, "traffic_labels.txt");
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -235,7 +235,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private MappedByteBuffer loadModelFile() throws IOException {
-        AssetFileDescriptor fileDescriptor = this.getAssets().openFd("model.tflite");
+        AssetFileDescriptor fileDescriptor = this.getAssets().openFd("nl_cnn_model.tflite");
         FileInputStream inputStream = new FileInputStream(fileDescriptor.getFileDescriptor());
         FileChannel fileChannel = inputStream.getChannel();
         long startOffset = fileDescriptor.getStartOffset();

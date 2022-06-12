@@ -1,0 +1,43 @@
+Limita 20
+Limita 30
+Limita 50
+Limita 60
+Limita 70
+Limita 80
+Sfarsitul limitarii 80
+Limita 100
+Limita 120
+Depasirea interzisa
+Depasirea interzisa pentru camioane
+Intersectie cu drum fara prioritate
+Drum cu prioritate
+Cedeaza trecerea
+Stop
+Accesul interzis tuturor
+Accesul interzis camioanelor
+Accesul interzis vehiculelor
+Atentie
+Atentie curba la stanga
+Atentie curba la dreapta
+Atentie insiruire de curbe cu prima la stanga
+Atentie drum cu denivelari
+Atentie drum alunecos
+Atentie drum ingustat
+Atentie santier in lucru
+Atentie copii
+Atentie oameni
+Atentie urmeaza trecere
+Atentie biciclete
+Atentie zapada
+Atentie caprioare
+Sfarsitul oricarei restrictii
+Obligatoriu la dreapta
+Obligatoriu la stanga
+Obligatoriu inainte
+Inainte si la dreapta
+Inainte si la stanga
+Ocolire prin dreapta
+Ocolire prin stanga
+Sens giratoriu
+Sfarsitul restrictiei de depasire
+Sfarsitul restrictiei de depasire pentru camioane

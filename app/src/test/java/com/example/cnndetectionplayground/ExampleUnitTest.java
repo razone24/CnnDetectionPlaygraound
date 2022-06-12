@@ -1,4 +1,4 @@
-package com.example.gesturedetection;
+package com.example.cnndetectionplayground;
 
 import org.junit.Test;
 
