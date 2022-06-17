@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(chooser, REQUEST_OPEN_IMAGE);
                 return true;
             case action_detect:
-                predictGesture();
+                predict();
                 return true;
         }
         return false;
@@ -152,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
         builder.show();
     }
 
-    private void predictGesture() {
+    private void predict() {
 
         loadingScreen.setVisibility(View.VISIBLE);
         int imageTensorIndex = 0;
