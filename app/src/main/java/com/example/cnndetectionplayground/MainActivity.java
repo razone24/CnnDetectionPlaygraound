@@ -173,15 +173,15 @@ public class MainActivity extends AppCompatActivity {
         Bitmap scaledImage = Bitmap.createScaledBitmap(signImage, imageSizeX, imageSizeY, true);
 
         if(imageShape[imageShape.length - 1] == 3) {
-            inputImageBuffer.load(signImage);
+            inputImageBuffer.load(scaledImage);
 
-            ImageProcessor imageProcessor =
-                    new ImageProcessor.Builder()
-                            .add(new ResizeWithCropOrPadOp(imageSizeX, imageSizeY))
-                            .add(new ResizeOp(imageSizeX, imageSizeY, ResizeOp.ResizeMethod.NEAREST_NEIGHBOR))
-                            .add(new NormalizeOp(0.0f, 1.0f))
-                            .build();
-            inputImageBuffer = imageProcessor.process(inputImageBuffer);
+//            ImageProcessor imageProcessor =
+//                    new ImageProcessor.Builder()
+//                            .add(new ResizeWithCropOrPadOp(imageSizeX, imageSizeY))
+//                            .add(new ResizeOp(imageSizeX, imageSizeY, ResizeOp.ResizeMethod.NEAREST_NEIGHBOR))
+//                            .add(new NormalizeOp(0.0f, 1.0f))
+//                            .build();
+//            inputImageBuffer = imageProcessor.process(inputImageBuffer);
             long timeStart = System.currentTimeMillis();
             interpreter.run(inputImageBuffer.getBuffer(), outputProbabilityBuffer.getBuffer().rewind());
             long timeEnd = System.currentTimeMillis();
